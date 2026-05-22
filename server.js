@@ -4,6 +4,12 @@ const WebSocket = require("ws");
 // WebSocetのサーバー起動
 const wss = new WebSocket.Server({ port: 3000 });
 
+// 俺のMacBook用
+// const wss = new WebSocket.Server({
+//     port: 8080,
+//     host: "0.0.0.0"
+// });
+
 // サーバーに接続する人(クライアント)の集合を定義
 const clients = new Set();
 
